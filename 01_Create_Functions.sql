@@ -1,0 +1,7 @@
+CREATE FUNCTION dbo.fn_NormalizeLookupValue (@value VARCHAR(255))
+RETURNS VARCHAR(255)
+AS
+BEGIN
+    RETURN LOWER(LTRIM(RTRIM(@value)))
+END;
+GO
